@@ -1,0 +1,84 @@
+body {
+    font-family: Monospace  ;
+    color: rgb(255, 255, 255);
+    background-color: #023D54;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+}
+.tile {
+    background-color: #008080;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgb(37, 37, 37);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    grid-column: span 3;
+    grid-row: span 2;
+    border:5px solid rgb(1, 46, 40);
+}
+.tile h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.tile p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+.span-6-2 { grid-column: span 6; }
+.span-3-4 { grid-row: span 4; }
+.span-9-2 { grid-column: span 9; }
+.span-12-3 { grid-column: span 12; }
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.skill-icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 2px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(151, 224, 162);
+    padding: 5px 10px;
+    border-radius: 2px;
+    border:1px solid rgba(255, 255, 255);
+}
+
+.skill-item span {
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+.my-custom-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .my-custom-icon,
+.contact-link:hover .my-custom-icon {
+    transform: scale(1.25);
+}
