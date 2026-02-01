@@ -1,0 +1,26 @@
+
+#home {
+    margin-top: 50px;
+    height: 100vh;
+    background: linear-gradient(to left, #008AD8, #001440);
+    color: white;
+}
+
+#skills {
+    background: linear-gradient(to left, #008AD8, #001440);
+    color: white;
+
+}
+
+#about{
+    height: 100vh;
+    background: linear-gradient(to left, #008AD8, #001440);
+    color: white;
+
+}
+
+#projects{
+    height: 100vh;
+    background: linear-gradient(to left, #008AD8, #001440);
+    color: white;
+}
